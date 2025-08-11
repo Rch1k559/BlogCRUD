@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    {% if blog %}
+        Редактирование блога
+    {% else %}
+        Добавить блог
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <h1>
+        {% if blog %}
+            Редактирование блога: {{ blog.title }} {{ blog.content }}
+        {% else %}
+            Добавление нового блога
+        {% endif %}
+    </h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить</button>
+    </form>
+{% endblock %}

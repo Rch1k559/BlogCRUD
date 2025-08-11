@@ -1,0 +1,51 @@
+{% extends 'blog/base.html' %} {% block content %}
+<h2>Блоги</h2>
+<ul>
+  {% for blog in blogs %}
+  <li>
+    <div style="margin-bottom: 10px">
+      <a href="{% url 'blog_detail' pk=blog.pk %}">{{ blog }}</a>
+      <a
+        style="
+          margin-left: 10px;
+          background-color: green;
+          color: white;
+          padding: 2px 5px;
+          text-decoration: none;
+          border-radius: 5px;
+        "
+        href="{% url 'blog_edit' pk=blog.pk %}"
+        >Редактировать</a
+      >
+      <a
+        style="
+          margin-left: 10px;
+          background-color: red;
+          color: white;
+          padding: 2px 5px;
+          text-decoration: none;
+          border-radius: 5px;
+        "
+        href="{% url 'blog_delete' pk=blog.pk %}"
+        >Удалить</a
+      >
+    </div>
+  </li>
+  {% empty %}
+  <li>Блогов пока нету.</li>
+  {% endfor %}
+</ul>
+<a
+  style="
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  "
+  href="{% url 'blog_add' %}"
+  >Написать новый блог</a
+>
+{% endblock %}
