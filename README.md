@@ -22,24 +22,24 @@ git clone https://github.com/username/blogcrud.git
 cd blogcrud
 
 ## Create and activate virtual environment
-python -m venv venv
+- python -m venv venv
 For macOS/Linux
-source venv/bin/activate
+- source venv/bin/activate
 For Windows
-venv\Scripts\activate
+- venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 # Apply migrations
-python manage.py makemigrations
-python manage.py migrate
+- python manage.py makemigrations
+- python manage.py migrate
 
 # Start server
-python manage.py runserver
+- python manage.py runserver
 
 # Open in browser:
-http://127.0.0.1:8000/
+- http://127.0.0.1:8000/
 
 # License
-This project is created for educational purposes. You can use and modify it freely.
+- This project is created for educational purposes. You can use and modify it freely.
