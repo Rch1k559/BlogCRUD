@@ -28,18 +28,18 @@ source venv/bin/activate
 # For Windows
 venv\Scripts\activate
 
-Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-Apply migrations
+# Apply migrations
 python manage.py makemigrations
 python manage.py migrate
 
-Start server
+# Start server
 python manage.py runserver
 
-Open in browser:
+# Open in browser:
 http://127.0.0.1:8000/
 
-License
+# License
 This project is created for educational purposes. You can use and modify it freely.
