@@ -23,9 +23,9 @@ cd blogcrud
 
 ## Create and activate virtual environment
 python -m venv venv
-# For macOS/Linux
+For macOS/Linux
 source venv/bin/activate
-# For Windows
+For Windows
 venv\Scripts\activate
 
 # Install dependencies
