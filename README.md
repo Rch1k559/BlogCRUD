@@ -22,11 +22,11 @@ git clone https://github.com/username/blogcrud.git
 cd blogcrud
 
 ## Create and activate virtual environment
-- python -m venv venv
+python -m venv venv
 - For macOS/Linux
-- source venv/bin/activate
+source venv/bin/activate
 - For Windows
-- venv\Scripts\activate
+venv\Scripts\activate
 
 # Install dependencies
 - pip install -r requirements.txt
