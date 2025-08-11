@@ -21,7 +21,7 @@ bash
 git clone https://github.com/username/blogcrud.git
 cd blogcrud
 
-Create and activate virtual environment
+## Create and activate virtual environment
 python -m venv venv
 # For macOS/Linux
 source venv/bin/activate
